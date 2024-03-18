@@ -1,0 +1,28 @@
+#tablero{
+    width: 100%;
+    height: 100%;
+    margin: 1vh;
+}
+#fila{
+    width: auto;
+    height: auto;
+    display: flex;
+}
+#celula0{
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    background: #123123;
+}
+#celula1{
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    background: #321321;
+}
+#celula0:hover{
+    background: #17402c;
+}
+#celula1:hover{
+    background: #471b30;
+}

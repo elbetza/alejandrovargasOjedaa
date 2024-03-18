@@ -1,0 +1,16 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Preguntas de Cultura General</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="question-container">
+    <p class="question">{{ question }}</p>
+    <ion-list lines="full">
+      <ion-item *ngFor="let option of options" button (click)="checkAnswer(option)">
+        {{ option }}
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

@@ -1,20 +1,31 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <ion-header [translucent]="true" style="text-align: center;">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Alejandro Vargas Ojeda</ion-title>
+      <ion-buttons slot="end">
+        <ion-button (click)="redireccion('/loginpage')">Login <ion-icon name="enter-outline"></ion-icon></ion-button>
+        <ion-button (click)="redireccion('/signin')">signin <ion-icon name="clipboard-outline"></ion-icon></ion-button>
+        <ion-button (click)="redireccion('/infinitescroll')">listas <ion-icon name="clipboard-outline"></ion-icon></ion-button>
+        <ion-button (click)="redireccion('/culturageneral')">preguntas <ion-icon name="clipboard-outline"></ion-icon></ion-button>
+        <ion-button (click)="redireccion('/calculadora')">calculadora <ion-icon name="clipboard-outline"></ion-icon></ion-button>
+        <ion-button (click)="redireccion('/agenda-pokemon')">agenda pokemon <ion-icon name="clipboard-outline"></ion-icon></ion-button>
+      </ion-buttons>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-row>
+    <ion-col size="6">
+      <ion-img src="assets/icon/alex.jpg"></ion-img>
+    </ion-col>
+    <ion-col size="6">
+      <ion-text>
+        <h2>Información de la foto</h2>
+        <p>"My name is Alejandro, I'm from Salamanca, Guanajuato. I study at the Technical University of Salamanca, 
+          currently in the field of Information Technology, specializing in multi-platform software development. I'm 
+          20 years old. One of the jobs I would like to have is character animator for movies or video games; it's one 
+          of my dreams. To achieve this, I would like to learn 2D and 3D animation. Additionally, after finishing my degree,
+           I would like to take graphic design courses to start developing skills in those fields."</p>
+      </ion-text>
+    </ion-col>
+  </ion-row>
 </ion-content>

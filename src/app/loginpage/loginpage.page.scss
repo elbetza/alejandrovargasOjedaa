@@ -1,0 +1,63 @@
+// Estilos para la página
+page-signin {
+  ion-header {
+    ion-toolbar {
+      ion-title {
+        text-align: center; // Centrar el texto del título
+      }
+    }
+  }
+
+  ion-content {
+    --ion-background-color: transparent; // Fondo transparente
+
+    .container {
+      display: flex;
+      justify-content: center; // Centrar horizontalmente
+
+      .content-wrapper {
+        //background-image: url('assets/icon/10.jpg'); // Ruta de la imagen de fondo
+        background-size: cover; // Ajustar el tamaño de la imagen de fondo
+        border-radius: 20px; // Esquinas redondeadas
+        padding: 20px; // Espaciado interno
+        width: 300px; // Ancho del recuadro
+        margin-top: 100px; // Espacio superior para centrar verticalmente
+
+        ion-item {
+          width: 100%; // Ancho completo para los items
+
+          ion-label {
+            color: #333; // Color del texto de la etiqueta
+            font-weight: bold; // Texto en negrita
+          }
+
+          ion-input {
+            border-bottom: 2px solid #008000; // Borde inferior verde
+          }
+
+          #iconos {
+            ion-button {
+              color: #008000; // Color del botón de icono
+            }
+          }
+        }
+
+        ion-button {
+          margin-top: 1000px; // Espacio superior
+          --border-radius: 20px; // Bordes redondeados
+          --background: #8a2be2; // Color de fondo violeta oscuro
+          --color: #fff; // Color del texto
+          --padding-start: 40px; // Espaciado interno izquierdo
+          --padding-end: 40px; // Espaciado interno derecho
+        }
+
+        a {
+          margin-top: 10px; // Espacio superior
+          color: #333; // Color del texto del enlace
+          text-decoration: none; // Sin subrayado
+          font-size: 14px; // Tamaño de fuente
+        }
+      }
+    }
+  }
+}

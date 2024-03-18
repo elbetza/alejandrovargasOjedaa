@@ -1,0 +1,69 @@
+//#superior,#inferior{
+  //align-content: center;
+//}
+//ion-input:hover{
+  //background: blue;
+//}
+//p{
+  //background: blue;
+//}
+
+// Establecer un fondo de imagen para toda la interfaz
+ion-content {
+  background-image: url('../../assets/icon/10.jpg');
+  background-size: cover; // Ajustar la imagen para cubrir todo el área del contenido
+  background-position: center; // Centrar la imagen en el contenido
+  background-repeat: no-repeat; // Evitar que la imagen se repita
+}
+
+#superior, #inferior {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto; // Centrar el contenido horizontalmente
+  max-width: 500px; // Limitar el ancho máximo del contenido
+
+  ion-item {
+    width: 100%;
+    max-width: 400px; // Ancho máximo para los elementos de formulario
+  }
+
+  ion-input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    transition: background-color 0.3s ease; // Agregar transición suave al cambio de color de fondo al pasar el mouse
+  }
+
+  ion-input:hover {
+    background-color: #f0f0f0; // Cambiar el color de fondo al pasar el mouse
+  }
+}
+
+#container {
+  // Estilos adicionales para el contenedor si es necesario
+}
+
+#scrollcontainer {
+  margin-top: 20px;
+
+  #lista {
+    ion-item {
+      ion-avatar {
+        width: 40px; // Establecer un ancho fijo para el avatar
+        height: 40px; // Establecer una altura fija para el avatar
+      }
+
+      ion-text {
+        flex: 1; // Hacer que el texto ocupe todo el espacio disponible
+        display: flex; // Usar flexbox para alinear verticalmente el texto
+        align-items: center; // Centrar verticalmente el texto
+      }
+    }
+  }
+}
+
+

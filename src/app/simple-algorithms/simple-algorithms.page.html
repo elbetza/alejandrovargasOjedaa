@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>simple-algorithms</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">simple-algorithms</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list>
+    <ion-item>
+      <ion-select label="Funcion">
+        <ion-select-option value="grafica">ordenamiento</ion-select-option>
+        <ion-select-option value="primos">numeros primos</ion-select-option>
+        <ion-select-option value="fibonacci">fibonacci</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <div id="contenedor-grafica">
+    <plotly-plot [data]="grafica.data" [layout]="grafica.layout"></plotly-plot>
+  </div>
+
+  <!-- fibonacci -->
+  <div id="fibonacci" class="blanco-negro">
+    <div id="fila">
+      <div id="celula" *ngFor="let fibo of fibonacci">{{fibo}}</div>
+    </div>
+  </div>
+  <!-- numeros primos -->
+  <div id="numprimos">
+    <div id="fila">
+      <div [id]="'celula' + primo" *ngFor="let primo of primos"></div>
+    </div>
+  </div>
+</ion-content>
+
+
+
+
+
+

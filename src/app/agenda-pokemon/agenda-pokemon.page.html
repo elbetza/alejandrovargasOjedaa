@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Agenda de Pokémon
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let pokemon of pokemonList">
+      <ion-avatar slot="start">
+        <img [src]="'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/' + getPokemonId(pokemon.url) + '.png'" alt="pokemon">
+      </ion-avatar>
+      <ion-label>{{ getPokemonName(pokemon.name) }}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

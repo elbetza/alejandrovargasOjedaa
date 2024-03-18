@@ -1,27 +1,35 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+ion-content {
+  --background: transparent; /* Establece el fondo transparente para que la imagen de fondo sea visible */
+  background-image: url('../../assets/icon/10.jpg'); /* Ruta de la imagen de fondo */
+  background-size: cover; /* Hace que la imagen de fondo cubra todo el contenido */
+  background-position: center; /* Centra la imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  padding: 20px; /* Agrega un poco de relleno al contenido para evitar que esté demasiado cerca del borde */
+  display: flex; /* Usa flexbox para centrar vertical y horizontalmente */
+  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: center; /* Centra horizontalmente los elementos */
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+ion-img {
+  width: 20%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+  height: auto; /* Permite que la altura de la imagen se ajuste automáticamente para mantener la relación de aspecto */
+  display: block; /* Asegura que la imagen se muestre como un elemento de bloque */
+  border-radius: 20%; /* Hace que la imagen sea circular */
+  overflow: hidden; /* Oculta cualquier parte de la imagen que esté fuera del círculo */
+  max-height: 200px; /* Establece la altura máxima de la imagen */
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+ion-text {
+  color: #000000; /* Cambia el color del texto a negro */
 }
 
-#container a {
-  text-decoration: none;
+h2 {
+  font-size: 20px; /* Tamaño de fuente del título */
+  font-family: 'Courier New', Courier, monospace; /* Estilo de letra minimalista */
+  margin-bottom: 10px; /* Espacio inferior después del título */
+}
+
+p {
+  font-size: 16px; /* Tamaño de fuente del párrafo */
+  font-family: 'Courier New', Courier, monospace; /* Estilo de letra minimalista */
 }
